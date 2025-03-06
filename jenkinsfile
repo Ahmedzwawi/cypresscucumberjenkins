@@ -51,4 +51,5 @@ post{
                 sortingMethod: 'ALPHABETICAL',
                 trendsLimit: 100
          }
+    }
 }
