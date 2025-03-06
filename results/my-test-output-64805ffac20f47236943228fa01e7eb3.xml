@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="10.180" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-03-06T10:43:33" tests="0" file="cypress\features\login.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Login to SauceDemo" timestamp="2025-03-06T10:43:33" tests="4" time="10.172" failures="0">
+    <testcase name="Login to SauceDemo Login avec username valide et password valide" time="2.128" classname="Login avec username valide et password valide">
+    </testcase>
+    <testcase name="Login to SauceDemo Login avec username valide et password invalide" time="1.483" classname="Login avec username valide et password invalide">
+    </testcase>
+    <testcase name="Login to SauceDemo Login avec username invalide et password valide" time="1.127" classname="Login avec username invalide et password valide">
+    </testcase>
+    <testcase name="Login to SauceDemo Login avec username invalide et password invalide" time="1.218" classname="Login avec username invalide et password invalide">
+    </testcase>
+  </testsuite>
+</testsuites>

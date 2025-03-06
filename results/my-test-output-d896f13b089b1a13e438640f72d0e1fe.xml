@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="5.094" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-03-06T10:43:49" tests="0" file="cypress\features\menu.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Menu et déconnexion" timestamp="2025-03-06T10:43:49" tests="1" time="5.090" failures="0">
+    <testcase name="Menu et déconnexion je clique sur le menu et je me déconnecte" time="2.733" classname="je clique sur le menu et je me déconnecte">
+    </testcase>
+  </testsuite>
+</testsuites>
