@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="10.083" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-03-06T10:26:11" tests="0" file="cypress\features\products.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Produits" timestamp="2025-03-06T10:26:11" tests="5" time="10.076" failures="0">
+    <testcase name="Produits Verification de list de produits" time="1.712" classname="Verification de list de produits">
+    </testcase>
+    <testcase name="Produits Verification du tri des produits par nom" time="1.414" classname="Verification du tri des produits par nom">
+    </testcase>
+    <testcase name="Produits Verification du tri des produits par prix (bas à haut)" time="1.312" classname="Verification du tri des produits par prix (bas à haut)">
+    </testcase>
+    <testcase name="Produits Ajout d&apos;un produit au panier" time="1.272" classname="Ajout d&apos;un produit au panier">
+    </testcase>
+    <testcase name="Produits Suppression d&apos;un produit du panier" time="1.355" classname="Suppression d&apos;un produit du panier">
+    </testcase>
+  </testsuite>
+</testsuites>

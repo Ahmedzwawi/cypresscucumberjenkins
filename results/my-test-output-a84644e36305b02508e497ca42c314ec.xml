@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.596" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2025-03-06T10:26:01" tests="0" file="cypress\features\productDetails.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Détails du produit" timestamp="2025-03-06T10:26:01" tests="1" time="4.590" failures="0">
+    <testcase name="Détails du produit Vérifier que les détails du produit sont identiques avant et après le clic" time="1.921" classname="Vérifier que les détails du produit sont identiques avant et après le clic">
+    </testcase>
+  </testsuite>
+</testsuites>

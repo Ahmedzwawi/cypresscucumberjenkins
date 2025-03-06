@@ -20,3 +20,7 @@ import './commands'
 // require('./commands')
 // import "cypress-mochawesome-reporter/register";
 import "cypress-cucumber-attach-screenshots-to-failed-steps";
+import 'cypress-mochawesome-reporter/register';
+// cypress/support/e2e.js
+const registerCypressGrep = require('@cypress/grep')
+registerCypressGrep()

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="6.633" tests="1" failures="2">
+  <testsuite name="Root Suite" timestamp="2025-03-06T10:31:05" tests="0" file="cypress\features\ajoutProduitsCard.feature" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Ajouter des produits au panier" timestamp="2025-03-06T10:31:05" tests="1" time="6.626" failures="2">
+    <testcase name="Ajouter des produits au panier Vérifier les produits s&apos;ils sont ajoutés dans panier" time="0.000" classname="Vérifier les produits s&apos;ils sont ajoutés dans panier">
+      <failure message="productPage is not defined" type="ReferenceError"><![CDATA[ReferenceError: productPage is not defined
+    at Context.eval (cypress/steps/ajoutProduitsCard.steps.js:9:8)
+    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)]]></failure>
+    </testcase>
+    <testcase name="Ajouter des produits au panier &quot;after each&quot; hook for &quot;Vérifier les produits s&apos;ils sont ajoutés dans panier&quot;" time="0.000" classname="&quot;after each&quot; hook for &quot;Vérifier les produits s&apos;ils sont ajoutés dans panier&quot;">
+      <failure message="`cy.readFile(&quot;C:\Users\Admin\Desktop\saucedemo_cypress_cucumber_jenkins - Copie\saucedemo_cypress_cucumber\cypress\screenshots/ajoutProduitsCard.feature/Ajouter des produits au panier -- Vérifier les produits s&apos;ils sont ajoutés dans panier (failed).png&quot;)` timed out.
+
+https://on.cypress.io/readfile
+
+Because this error occurred during a `after each` hook we are skipping all of the remaining tests." type="CypressError"><![CDATA[CypressError: `cy.readFile("C:\Users\Admin\Desktop\saucedemo_cypress_cucumber_jenkins - Copie\saucedemo_cypress_cucumber\cypress\screenshots/ajoutProduitsCard.feature/Ajouter des produits au panier -- Vérifier les produits s'ils sont ajoutés dans panier (failed).png")` timed out.
+
+https://on.cypress.io/readfile
+
+Because this error occurred during a `after each` hook we are skipping all of the remaining tests.
+    at cypressErr (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:76065:18)
+    at Object.cypressErrByPath (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:76070:10)
+    at $Command.readFile (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:120375:88)
+    at cyFn (https://www.saucedemo.com/__cypress/runner/cypress_runner.js:138201:19)
+From Your Spec Code:
+    at Context.eval (node_modules/cypress-cucumber-attach-screenshots-to-failed-steps/index.js:12:0)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

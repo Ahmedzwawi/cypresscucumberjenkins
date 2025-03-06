@@ -5,10 +5,10 @@ pipeline {
             args '--entrypoint=""'  
         }
     }
-// parameters {
-//         string(name: 'String_TAG', defaultValue: '', description: 'Tag de test')
-//         choice(name: 'CHOICE_TAG', choices: ['@TC-002', '@TC-003', '@TC-003'], description: 'Sélectionne un tag de test')
-//     }
+parameters {
+        string(name: 'String_TAG', defaultValue: '', description: 'Tag de test')
+        choice(name: 'CHOICE_TAG', choices: ['@valid_credentials', '@invalid_credentials', 'Login','Menu'], description: 'Sélectionne un tag de test')
+    }
 
     stages {
         stage('Vérifier la version de Cypress') {
@@ -17,12 +17,23 @@ pipeline {
                 sh "npm ci"
             }
         }
-          stage('exécuter') {
+
+         stage('Exécuter les tests avec Cypress') {
             steps {
-                sh 'npx cypress run'
-                // sh 'npx cypress run --reporter junit'
+                script {
+                    // Si le paramètre String_TAG est vide, utilise le premier choix de la liste déroulante
+                    def tagToUse = params.String_TAG ?: params.CHOICE_TAG
+                    // Exécution des tests avec le tag sélectionné
+                    sh "npx cypress run --env grepTags=${tagToUse}"
+                }
             }
         }
+        //   stage('exécuter') {
+        //     steps {
+        //         sh 'npx cypress run'
+        //         // sh 'npx cypress run --reporter junit'
+        //     }
+        // }
     }
 // post{
 //         always {
