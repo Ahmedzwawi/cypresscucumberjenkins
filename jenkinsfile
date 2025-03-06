@@ -24,7 +24,7 @@ parameters {
                     // Si le paramètre String_TAG est vide, utilise le premier choix de la liste déroulante
                     def tagToUse = params.String_TAG ?: params.CHOICE_TAG
                     // Exécution des tests avec le tag sélectionné
-                    sh "npx cypress run --env grepTags=${tagToUse}"
+                    sh "npx cypress run --env TAGS='${params.CHOICE_TAG}'"
                 }
             }
         }
